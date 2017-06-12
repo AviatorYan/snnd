@@ -18,7 +18,7 @@ function similarities = snns(X, k, primary_method, use_parallel )
 % Other m-files required: snn.m
 %
 % Author: Robert Ciszek
-% Decomber 2016; Last revision: 12-December-2016
+% June 2017; Last revision: 12-June-2017
 
 
 	if ~exist('k', 'var')
