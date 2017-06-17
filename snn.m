@@ -44,7 +44,6 @@ function counts = snn(X, k, method, parallel)
 			for j = 1:n		
 					C = intersect(indexes(i,2:k+1), indexes(j,2:k+1) );
 					counts(i,j) = size(C,2);
-					%counts(j,i) = size(C,2);
 			end
 		end
 	else
@@ -52,7 +51,6 @@ function counts = snn(X, k, method, parallel)
                         for j = i:n
                                         C = intersect(indexes(i,2:k+1), indexes(j,2:k+1) );
                                         counts(i,j) = size(C,2);
-                                        %counts(j,i) = size(C,2);
                         end
                 end
 
